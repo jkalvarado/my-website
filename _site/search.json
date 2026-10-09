@@ -1,0 +1,37 @@
+[
+  {
+    "objectID": "ae_02.html",
+    "href": "ae_02.html",
+    "title": "AE02 - Hello git",
+    "section": "",
+    "text": "library(tidyverse)\nlibrary(datasauRus)"
+  },
+  {
+    "objectID": "ae_02.html#load-packages-and-data",
+    "href": "ae_02.html#load-packages-and-data",
+    "title": "AE02 - Hello git",
+    "section": "",
+    "text": "library(tidyverse)\nlibrary(datasauRus)"
+  },
+  {
+    "objectID": "ae_02.html#exercises",
+    "href": "ae_02.html#exercises",
+    "title": "AE02 - Hello git",
+    "section": "Exercises",
+    "text": "Exercises\n\nExercise 1\nIn the help file, it says there is 1846 rows and 3 columns. The variables listed are char, double, and another double.\n\n\nExercise 2\nLet’s look at what these datasets are with a frequency table of the dataset variable:\n\ndatasaurus_dozen %&gt;%\n  count(dataset) %&gt;%\n  print(13)\n\n# A tibble:\n#   13 × 2\n   dataset   \n   &lt;chr&gt;     \n 1 away      \n 2 bullseye  \n 3 circle    \n 4 dino      \n 5 dots      \n 6 h_lines   \n 7 high_lines\n 8 slant_down\n 9 slant_up  \n10 star      \n11 v_lines   \n12 wide_lines\n13 x_shape   \n# ℹ 1 more\n#   variable:\n#   n &lt;int&gt;\n\n\nNow let’s plot the data in the dino dataset:\n\ndino_data &lt;- datasaurus_dozen %&gt;%\n  filter(dataset == \"dino\")\n\nggplot(data = dino_data, mapping = aes(x = x, y = y)) +\n  geom_point()\n\n\n\n\n\n\n\n\nAnd next calculate the correlation between x and y in this dataset:\n\ndino_data %&gt;%\n  summarize(r = cor(x, y))\n\n# A tibble: 1 × 1\n        r\n    &lt;dbl&gt;\n1 -0.0645\n\n\n\n\nExercise 3\n\nstar_data &lt;- datasaurus_dozen %&gt;%\n  filter(dataset == \"star\")\n\nggplot(data = star_data, mapping = aes(x = x, y = y)) +\n  geom_point()\n\n\n\n\n\n\n\n\n\nstar_data %&gt;%\n  summarize(r = cor(x, y))\n\n# A tibble: 1 × 1\n        r\n    &lt;dbl&gt;\n1 -0.0630"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "my-website",
+    "section": "",
+    "text": "I want to use this type: https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/#category=YmxvZw==\nI can use this for like tips and tools in cybersecurity. An exmaple is like where to start in a digital foresic investigation, what OSINT tools are useful, and how to start in a web explotation.\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "I can’t roll my R’s.\n\n1 + 1\n\n[1] 2"
+  }
+]

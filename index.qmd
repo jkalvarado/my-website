@@ -1,0 +1,11 @@
+---
+title: "my-website"
+---
+
+I want to use this type: <https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/#category=YmxvZw==>
+
+I can use this for like tips and tools in cybersecurity. An exmaple is like where to start in a digital foresic investigation, what OSINT tools are useful, and how to start in a web explotation.
+
+```{r}
+1 + 1
+```

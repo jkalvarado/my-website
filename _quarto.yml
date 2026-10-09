@@ -1,0 +1,33 @@
+project:
+  type: website
+
+website:
+  title: "Cyber Swiss Knife"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - about.qmd
+      - text: "Assignments"
+        menu:
+          - ae_02.qmd
+  # sidebar:
+  #   style: "floating"
+  #   search: true
+  #   contents:
+  #     - index.qmd
+  #     - about.qmd
+  #     - section: "Assignments"
+  #       contents:
+  #         - ae_02.qmd
+
+format:
+  html:
+    theme:
+      - vapor
+      - brand
+    css: styles.css
+    toc: true
+
+
+
